@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bulb Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>BULB GAME</h1>
+
+        <div class="data">
+            <input id="user-name" type="text" placeholder="User's name"> </input>
+            <button id="add-user"> Add user</button>
+        </div>
+
+        <div class="controls">
+            <button id="easy-btn">Easy</button>
+            <button id="medium-btn"> Medium </button>
+            <button id="hard-btn"> Hard </button>
+            <button id="restart"> Restart </button>
+        </div>
+
+        <table> </table>
+
+        <div class="discription">
+
+            <div class="timer">
+                <p id="current-user"> No one is playing </p>
+                    <button id="pause-btn"> Pause </button>
+                    <button id="save-btn"> Save </button>
+                    <button id="load-btn"> Load </button>
+                <p id="timer"> 00:00:00 </p>
+            </div>
+            <h2> Story </h2>
+                <p>
+    Once upon a time, King Unnamed of Nowhereland was both smiling and crying at the same time. He was smiling because his enormous brand-new palace with many spacious rooms and corridors has just been finished. He is also crying as these rooms need to be illuminated and kept warm, but the ongoing increase of utility costs affect him as well. So now it's time to think about the placement of the palace's light bulbs. We need to place them so that everything is properly lit, but we cannot install any unnecessary bulbs.
+                    </p>
+            <h2> Instructions </h2>
+                <ul>
+                    <li> Timer starts when you add user. </li>
+                    <li> Click a level button to start the game, or restart it. </li>
+                    <li> Click a cell to place/remove a bulb. bulbs can only be placed above white tiles. </li>
+                    <li> Light doesn't spread diagonaly, only straight. </li>
+                    <li> Number on black cells indicates the required number of adjacent bulbs. </li>
+                    <li> Two light bulbs can NEVER illuminate each other..</li>
+                    <li> Illuminate the white tiles. </li>
+                </ul>
+
+            <h2> Score board </h2>
+                <ul id="scoreboard"> </ul>
+
+            <h2> Creating levels? </h2>
+            <p> It's possible to create levels by writing a string to express the level as the next placeholder expresses the displayed level. # for white tiles. 0, 1, 2, 3 for black tiles with numbers, and @ for non-numbered black tiles. the width must equal the height. </p>
+            <textarea name="create-level" id="create-level" rows="10" cols="60" tabindex=""></textarea>
+            <br>
+            <button id="add-level-btn"> add level </button>
+            <button id="load-level-btn"> load level </button>
+            <button id="edit-level-btn"> edit level </button>
+        </div>
+
+        <script src="script.js"> </script>
+        <script>
+        </script>
+    </body>
+</html>
